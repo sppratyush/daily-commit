@@ -20,7 +20,7 @@ jobs:
 
       - name: Update file
         run: |
-          date > log.txt
+          echo "Last update: $(date +%s)" > log.txt
 
       - name: Commit and Push
         run: |
